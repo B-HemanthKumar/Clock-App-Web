@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.main-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  position: relative;
+}
+
+#grid-container1 {
+  width: 45%;
+  height: 75vh;
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 50% 10% 20%;
+}
+
+.line1{
+  position: absolute;
+  font-weight: 300;
+  font-size: 50px;
+  top: 50px;
+  left: 45px;
+  z-index: 1;
+  color: #3d087b;
+  opacity: 0.75;
+}
+
+.line2{
+  position: absolute;
+  font-weight: 300;
+  font-size: 45px;
+  top: 50px;
+  left: 45px;
+  z-index: 1;
+  color: #3d087b;
+  opacity: 0.75;
+}
+
+.line3{
+  position: absolute;
+  font-weight: 300;
+  font-size: 45px;
+  top: 50px;
+  left: 45px;
+  z-index: 1;
+  color: #3d087b;
+  opacity: 0.75;
+}
+
+#clock-pic {
+  background-image: url("./Assests/Cl.png");
+  background-size: 100% 100%;
+  display: inline;
+}
+
+.msg1{
+  position: absolute;
+  width: 170px;
+  height: 70px;
+  left: 375px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font: normal normal normal 14px/20px Inter;
+  letter-spacing: 0px;
+  color: #858585;
+  opacity: 1;
+}
+
+.arrow-right {
+  position: absolute;
+  width: 0; 
+  height: 0;
+  left: 543px;
+  top: 30px;
+  z-index: 2;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ffffff;
+}
+
+.msg2{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: -40px;
+  top: 600px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font: normal normal normal 14px/20px Inter;
+  letter-spacing: 0px;
+  color: #858585;
+  opacity: 1;
+}
+
+.arrow-up {
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  left: 100px;
+  top: 594px;
+  z-index: 2;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+}
+
+#left-second-container {
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 3; 
+  position: relative;
+  border-radius: 10px; 
+}
+
+.left-sub-inner-container {
+  background-color: #ffffff;
+  width: 100%;
+  height: 33%;
+  position: relative;
+}
+
+#div1 {
+  background-image: url("./Assests/Ml.svg");
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+#div2 {
+  background-image: url("./Assests/ll.svg");
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+
+#div3 {
+  background-image: url("./Assests/Nl.svg");
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+#div4 {
+  background-image: url("./Assests/Nl.png");
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.left-sub-inner-container-option {
+  width: 82%;
+  height: 100%;
+  display: inline-block;
+  padding: 20px;
+  position: absolute;
+  left: 75px;
+  top: 7px;
+}
+
+.wakeUpTimeSelector {
+  width: 180px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #ededed;
+  border: 1px solid #c2c2c2;
+}
+
+#ltext {
+  height: 70px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 16px;
+  background-color: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  opacity: 0.23;
+  font: normal normal 900 25px Bauhaus Hv BT;
+  text-transform: uppercase;
+  color:#000000;
+}
+
+.settime{
+  width: 95%;
+  height: 50px;
+  text-align: center;
+  padding-top: 13px;
+  margin-top: 158px;
+  border-radius: 4px;
+  background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) ;
+  color: white;
+}
+
+
+.partytime{
+  position: absolute;
+  top: 538px;
+  width: 240px;
+  height: 50px;
+  padding-top: 13px;
+  text-align: center;
+  justify-content: center;
+  background: transparent linear-gradient(113deg, #F1A7C5 0%,#CB52F8 40%, #FC5EFF 81%,#6E54EC 100%);
+  border-radius: 4px;
+  color: white;
+}
+
+.partytime{
+  display:flex;
+  z-index: -999;
+}
+
+.settime:hover{
+  display:none;
+}
+
+.td{
+  margin: 0px;
+  padding-left: 10px;
+}
+
+#time-detail {
+  margin-top: 158px;
+  width: 100%;
+  height: 95px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  opacity: 0.23;
+  font: normal normal 500 15px Bauhaus Hv BT;
+  color: #000000;
+}
+
+#grid-container2 {
+  width: 45%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 20% 95%;
+  grid-row-gap: 30px;
+}
+
+#digital-clock {
+  position: relative;
+  border-radius: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+#lb1 {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  margin-top: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 0.71;
+  z-index: -2;
+}
+
+#lb2 {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  margin-top: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 0.5;
+  z-index: -4;
+}
+
+#clock1 {
+  position: absolute;
+  left: 20px;
+  width: 15%;
+  height: 80%;
+  color: #3d087b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px Manrope;
+  text-transform: uppercase;
+}
+
+#clock2 {
+  width: 13%;
+  height: 80%;
+  color: #8a11bf;
+  float: left;
+  align-items: center;
+  text-align: center;
+  font: normal normal normal 18px Barlow;
+  background: transparent url("./Assests/Hms.jpeg") 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  letter-spacing: 0px;
+}
+
+.colon {
+  width: 5%;
+  height: 100%;
+  font-size: 25px;
+  color: #8a11bf;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+#clock3 {
+  width: 13%;
+  height: 80%;
+  color: #8a11bf;
+  float: left;
+  align-items: center;
+  text-align: center;
+  font: normal normal normal 18px Barlow;
+  background: transparent url("./Assests/Hms.jpeg") 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  letter-spacing: 0px;
+}
+
+#clock4 {
+  width: 13%;
+  height: 80%;
+  color: #8a11bf;
+  float: left;
+  align-items: center;
+  text-align: center;
+  font: normal normal normal 18px Barlow;
+  background: transparent url("./Assests/Hms.jpeg") 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  letter-spacing: 0px;
+}
+
+#clock5 {
+  position: relative;
+  left: 20px;
+  width: 13%;
+  height: 80%;
+  color: #ffffff;
+  float: left;
+  align-items: center;
+  text-align: center;
+  font: normal normal normal 20px Barlow;
+  background: transparent url("./Assests/Ap.jpeg") 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+}
+
+#right-bottom-container {
+  position: relative;
+}
+
+#text-container {
+  height: 20%;
+  text-align: center;
+  padding-top: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  font: normal normal 900 25px Bauhaus Hv BT;
+  letter-spacing: 0px;
+  color: #8e53f0;
+  text-transform: uppercase;
+}
+
+#img-container {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #ffffff;
+  background: url("./Assests/welcome.jpg") transparent 0% 0% no-repeat padding-box;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  opacity: 1
+}
