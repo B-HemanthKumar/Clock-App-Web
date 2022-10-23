@@ -140,7 +140,7 @@
 }
 
 #div2 {
-  background-image: url("./Assests/ll.svg");
+  background-image: url("./Assests/Ll.svg");
   width: 20%;
   height: 100%;
   background-repeat: no-repeat;
@@ -215,7 +215,7 @@
 
 .partytime{
   position: absolute;
-  top: 538px;
+  top: 521px;
   width: 240px;
   height: 50px;
   padding-top: 13px;
