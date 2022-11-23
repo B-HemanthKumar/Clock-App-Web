@@ -214,8 +214,13 @@
 
 
 .partytime{
+<<<<<<< HEAD
   position: relative;
   top: -50px;
+=======
+  position: absolute;
+  top: 508px;
+>>>>>>> 093d558a7b5db8495ecbff9889b85d9c7a5abd58
   width: 240px;
   height: 50px;
   padding-top: 13px;
